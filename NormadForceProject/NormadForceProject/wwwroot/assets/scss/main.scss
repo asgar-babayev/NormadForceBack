@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) {
+    .hero {
+        height: 100vh;
+    }
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.heroText {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    text-align: center;
+
+    h1 {
+        font-size: 80px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .custom-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .custom-underline {
+        border-bottom: 2px solid white;
+        color: rgb(243, 243, 243);
+        padding-bottom: 4px;
+        cursor: pointer;
+    }
+}
+
+.overlay {
+    background: linear-gradient(to top, #000, transparent 90%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container-fluid {
+    gap: 180px;
+
+    .navbar-brand {
+        color: rgb(255, 208, 0);
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        font-size: 19px;
+        font-weight: bold;
+    }
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    z-index: -100;
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .custom-video,
+    .news-detail-image {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+nav {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#ourstudio {
+    padding: 100px 0px;
+
+    h2 {
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+    }
+
+    p {
+        font-size: 22px;
+        padding-top: 25px;
+        color: rgb(148, 148, 148);
+    }
+
+}
+
+.about-image,
+.team-image {
+    width: 100%;
+    height: 100%;
+    max-height: 635px;
+    min-height: 475px;
+    object-fit: cover;
+}
+
+.team-thumb {
+    background: var(--white-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 65%;
+    padding: 22px 32px 32px 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.news {
+    padding: 150px 0px;
+}
+
+.btn-send {
+    border: none;
+    padding: 15px 100px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 40px;
+    color: white;
+    background-color: #000;
+    transition: 0.3s;
+}
+
+.btn-send:hover {
+    background-color: #FFC107;
+}
+
+.site-footer {
+    background: black;
+    padding-top: 4.5rem;
+    padding-bottom: 2.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.social-icon {
+    display: flex;
+    gap: 15px;
+
+    li {
+        a {
+            color: white;
+            font-size: 25px;
+        }
+    }
+}
